@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RGU Music Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width =device-width, initial=scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RGU MUSIC SOCIETY</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="calender.html">Events</a></li>
+                <li><a href="RGMgallery.html">Gallery</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="ourHistory.html">Our History</a></li>
+                <li><a href="FavSong.html">Favourite Songs</a></li>
+                <li><a href="videocontent.html">Social Media Content</a></li>
+            </ul>    
+        </nav>
+        <a class="cta" href="contactus.html"><button>Contact</button></a>
+    </header>
+
+    <div class="c0ntainer">
+        <form>
+      
+          <label class="color" for="fname">First Name</label>
+          <input class="color" type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label class="color" for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label class="color" for="Email">Email</label>
+          <input class="color" type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label class="color" for="favGenre">Favourite Genre</label>
+          <select class="color" id="favGenre" name="What is your Favourite Music Genre.">
+            <option class="color" value="RM">Rock/Metal</option>
+            <option class="color" value="Pop">Pop</option>
+            <option class="color" value="Country">Country</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Blues">Blues</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Other">Other</option>
+          </select>
+      
+          <label class="color" for="Bio">Personal Bio</label>
+          <textarea class="color" id="subject" name="subject" placeholder="Tell us a wee bit about yourself..." style="height:200px"></textarea>
+          <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button>
+      
+        </form>
+    </div>
+</body>
+<footer>
+
+    <li><a class="cta" href="main.html"><button class="footerButton">Back to Homepage</button></a></li>
+    <p>Copyright Arvind Karaimangat, 2023</p>
+
+  
+</footer>
+
+
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrassment of the society
+Threat Impact: Defacement of society website, possible identify theft of existing members and non-members (they may pretend to be another person signing up).
+Threat Mitigation: Login validation, 2FA in place. 
+-->

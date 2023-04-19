@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RGU Music Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width =device-width, initial=scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RGU MUSIC SOCIETY</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="calender.html">Events</a></li>
+                <li><a href="RGMgallery.html">Gallery</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="ourHistory.html">Our History</a></li>
+                <li><a href="FavSong.html">Favourite Songs</a></li>
+                <li><a href="videocontent.html">Social Media Content</a></li>
+            </ul>    
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+
+    </header>
+    <div class="Text-Box">
+        <h1>Welcome to the RGU Music Society Events calender</h1>
+        <p>Here you can check out all the events that are happening as the weeks progress! 
+        </p>
+
+    </div>
+
+<main>
+
+<table class="calendar">
+    <tr>
+    <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th>
+    <th>Friday</th><th>Saturday</th><th>Sunday</th>
+    </tr>
+    <tr>
+    <th>W1</th><td>Magik</td><td>U2 Live!</td><td>Snoop Dogg pep talk</td><td></td><td></td><td> Splash! <br/> In-Person @ the Pub</td><td>METALLICA plays a half </br>an hour set again</td>
+    </tr>
+    <tr>
+    <th>W2</th><td>Gary Brindley's Math Music</td><td>Limp Bizkit! <br/> In-person @ the 
+    club house</td><td>Richard Z Kruspe Guitar Masterclass</td><td>Question The Completeness</td><td>AXMAN,<br/> TemiTope, <br/> Prashu</td><td>  MEGADETH LIVE <br/> at the atrium</td><td></td>
+    </tr>
+    <tr>
+    <th>W3</th><td>Magik ft. AXMAN</td><td>Arjun Rampal<br/>LIVE!</td><td>SLAYER <br/> LIVE!</td><td>Question The Completeness</td><td>NINE<br/> INCH <br/> NAILS</td><td>  John Issac LIVE <br/> at the atrium</td><td>Roger Mcdermott <br/>tries to sing</td>
+    </tr>
+    <tr>
+    <th>W4</th><td>Kyle will play <br> Ed Sheeran covers</td><td>Rap Battle between MC Dermott <br/>and Snoop Dogg</td><td>SLAYER <br/> LIVE!</td><td>Question The Completeness</td><td>NINE<br/> INCH <br/> NAILS</td><td>  John Issac LIVE <br/> at the atrium</td><td>MEGADETH VS METALLICA <br/>Shred Battle</td>
+    </tr>
+    <th>W4</th><td>Magik ft. AXMAN</td><td>Arjun Rampal<br/>LIVE!</td><td>SLAYER <br/> LIVE Again!</td><td>Jean-Claude's <br> Death Metal Band!</td><td>NINE<br/> INCH <br/> NAILS</td><td>  AXMAN LIVE <br/> at the atrium</td><td>Arjun Rampal <br/>tries to program</td>
+    </tr>
+</table>
+<div>
+    <form name="event">
+    <p>Want to recommend an event? Tell us below!</p>
+    <label class="color" for="event_title">Tell us your event idea:</label>
+    <input class="color" type="text" id="fname" name="event_title">
+    <label class="color" for="event_date">First name:</label>
+    <input class="color" type="date" name="event_date">
+    <button onclick="submit_event">Submit Event!</button>
+</form>
+</div>
+
+</main>
+
+
+<script>
+    function submit_event() {
+        var title = document.forms["event"]["event_title"].value;
+        var date = document.forms["event"]["event_date"].value;
+        if (title == "") {
+            alert("An event must have a title!");
+        }
+        else {
+            if (date.length == 0) {
+                alert("An event must have a date!");
+            }
+            else {
+                alert("Event submitted! The society will contact you soon!");
+            }
+        }
+    }
+</script>
+</body>
+<footer>
+    <p>Copyright Arvind Karaimangat. 2023</p>
+</footer>
+
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrassment of the society
+Threat Impact: Defacement of society website, changing of events 
+to unwanted content
+Threat Mitigation: Login validation, 2FA in place before member images 
+can be changed, email updates to members whose events. 
+-->

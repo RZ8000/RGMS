@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width =device-width, initial=scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <h1>RGU MUSIC SOCIETY</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="calender.html">Events</a></li>
+                <li><a href="RGMgallery.html">Gallery</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="ourHistory.html">Our History</a></li>
+                <li><a href="FavSong.html">Favourite Songs</a></li>
+                <li><a href="videocontent.html">Social Media Content</a></li>
+            </ul>    
+        </nav>
+        <li><a class="cta" href="contactus.html"><button>Contact</button></a></li>
+    </header>
+
+    <div class="Text-Box">
+        <h1>Le Gallery</h1>
+        <p>Here is a display of all the amazing performers and events.<br>You can click the images to enlargen them!  </p>
+
+    </div>
+
+<main>
+<div id="img-gallery" >
+<div class="row">
+    <div class="column">
+        <img class="boxcontain" src="luxeterna.jpg" alt="Metallica Live" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="UND3F1N3D_3L3M3N7.jpg" alt="Axman Live" onclick="myFunction(this);"  class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="RZKrgu.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);"  class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="Magik.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="Frhanakhtr.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="QTC.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="ttope.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="arjunrampal.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="kruspe.JPG" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+    <div class="column">
+        <img class="boxcontain" src="dalailama.jpg" alt="Richard Z Kruspe doing a show in RGU" onclick="myFunction(this);" class="gallery-img">
+    </div>
+</div>   
+</div>
+</main>
+
+<!-- The expanding image container -->
+<div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img class="displaybox" id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+</div>
+
+<script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+</body>
+<footer>
+    <p>Copyright Arvind Karaimangat, 2023</p>
+</footer>
+
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrassment of the society
+Threat Impact: Defacement of society website, changing of members 
+images, possible identify theft of members.
+Threat Mitigation: Login validation, 2FA in place before member images 
+can be changed, email updates to members whose images have been changed. 
+-->

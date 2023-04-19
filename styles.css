@@ -1,0 +1,541 @@
+@import url('https://fonts.googlepis.com/css?family=Montserrat:500');
+* .c0lumn{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color:  rgba(255, 255, 255, 0.5); */
+  /* background-image: -o-repeating-linear-gradient(30); */
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:  #24252a;
+    background-image: -o-repeating-linear-gradient(30);
+}
+
+
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: blueviolet;
+    cursor: pointer;
+
+}
+
+.header_links li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #77e4ff;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.79);
+}
+
+.Gallery {
+    text-indent: 50px;
+    margin-right: 50px;
+
+}
+
+h2 {
+
+    color: rgba(0, 136, 169, 0.79);
+    text-align: left;
+}
+
+.Text-Box {
+    width: 50%;
+    color: #4abdd7c9;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+  top: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/*The code below is edited out as I had decided not to have the function for the carousel 
+
+/* Next & previous buttons */
+/*.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -32px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+/*The code below is edited out as I had decided not to have the function for the carousel 
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: slide;
+  animation-duration: 15s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.calendar {
+  background-color: rgba(0, 136, 169, 1);
+  color: aliceblue;
+  position: relative;
+  margin-top: 10%;
+
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 1px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1;
+  cursor: pointer;
+  object-fit: contain;
+  width: 500;
+  height: 500;
+  padding-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: auto;
+
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: center;
+  display: none;
+  top: 10px;
+  width: 50%;
+  height: 50;
+  background-color: #5d72df;
+}
+
+/* Expanding image text */
+.imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 1988px;
+  right: 15px;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+
+}
+
+div.column {
+  width: 25%;
+  margin-bottom: 25px;
+  top: 30px;
+}
+
+.boxcontain {
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+}
+
+.displaybox {
+  object-fit: contain;
+  width: 500px;
+  height: 600px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.c0ntainer {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+
+.color {
+  color: #f2f2f2;
+}
+
+#img-gallery {
+  padding-top: 50px;
+  top: 110%;
+}
+
+#img-gallery.row {
+  margin-bottom: 10px;
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+}
+
+.gallery-img {
+  width: 100%;
+  
+}
+
+.main {
+  top: 30%;
+}
+
+.c0lumn {
+  float: right;
+  width: 33.3%;
+  padding: 0 8px;
+
+}
+
+@media screen and (max-width: 650px) {
+  .c0lumn {
+    width: 100%;
+    display: block;
+    background-color: aliceblue;
+    height: fit-content;
+  }
+}
+
+.teamcontainer {
+  padding: 0 16px;
+  color: black;
+  background-color: aliceblue;
+}
+
+.teamcontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  color: aliceblue;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.858); 
+  background-color: aliceblue; 
+  height: 430px;
+
+}
+
+.b0xcontain {
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+
+}
+
+.Text {
+  color: black;
+  font-size: 15px;
+  padding: 4px 6px;
+  position: absolute;
+  bottom: -10px;
+  width: 90%;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: content-box;
+}
+
+/*The code below is edited out as it was a test that did not work out for the overall design of the website
+
+/* .background-image {
+  background-image: url('r+live.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 20px;
+} */
+
+.members { 
+   background-color: #24252a;
+   align-items: center;
+  
+  
+} 
+/*  <input type="submit" value="Submit"> */
+
+.navbar {
+  background-color: #24252a;
+
+}
+
+.memname {
+  color: rgba(0, 136, 169, 0.79);
+  text-align: left;
+  background-color: aliceblue;
+}
+
+.title {
+  background-color: aliceblue;
+}
+
+.vid {
+  top: 26%;
+  position: absolute;
+}
+
+iframe {
+  position: relative;
+  left: 2.5%;
+}
+
+h2 {
+  left: 10%;
+  position:inherit;
+}
+
+p {
+  position: relative;
+  left: 2.6%;
+  color: aliceblue;
+}
+
+.Column {
+  float: left;
+  width: 33.3%;
+  padding: 0px;
+}
+
+.rampal {
+  top: 28%;
+  margin-left: 42%;
+  margin-right: 58%;
+  position: absolute;
+  width: 38%;
+}
+
+main {
+  width: 100%;
+
+}
+
+.text01 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: -32px;
+  width: 80%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+
+.memblock {
+  top: 30%;
+  position: absolute;
+}
+
+.bootBox {
+  width: 50%;
+  color: #4abdd7c9;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  
+}
+ 
+/* Advanced CSS */
+.Columnsong {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+/* aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+  font-style: italic;
+  background-color: rgba(0, 136, 169, 1);
+ 
+} */
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;            /* Footer height */
+}
